@@ -30,7 +30,7 @@ Journal = {arXiv:1602.07360}
 Year = 2016
 ```
 
-CIFAR-10 Documentation
+CIFAR-10 Documentation ~
 [Learning Multiple Layers of Features from Tiny Images](https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf)
 
 ```
