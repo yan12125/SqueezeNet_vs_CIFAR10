@@ -19,13 +19,23 @@ The **squeezenet_architecture.ipynb** notebook is going to likely remain the sam
 
 Inspired by the 'SqueezeNet' architecture proposed by Forrest Iandola et al. (2016), created a smaller model for CIFAR-10 data set using similar components (fire module, etc). 
 
-## Citation
+## Citations
 
 [SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size](https://arxiv.org/abs/1602.07360)
 
 ```
 Author = Forrest N. Iandola, Song Han, Matthew W. Moskewicz, Khalid Ashraf, William J. Dally and Kurt Keutzer
-Title = SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and $<$0.5MB model size
+Title = SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size
 Journal = {arXiv:1602.07360}
 Year = 2016
 ```
+
+CIFAR-10 Documentation
+[Learning Multiple Layers of Features from Tiny Images](https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf)
+
+```
+Author = Alex Krizhevsky
+Title = Learning Multiple Layers of Features from Tiny Images
+Year = 2009
+```
+
