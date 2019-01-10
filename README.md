@@ -13,7 +13,7 @@ discussion about the accuracy-plateau, etc.
 - [ ] complete README.md with new discussion and graphics
 
 
-The **squeezenet_architecture.ipynb** notebook is going to likely remain the same unless I fine tune some of the parameters or rearrange the layers (chiefly, where I downsample with max pooling). The actual SqueezeNet architecture is different than what I will refer to as 'Squeeze Net' so I encourage you to read the paper (cited below) and visit the [Deepscale/SqueezeNet github page](https://github.com/deepscale/squeezenet). Most of the modifications I made were to better suit the CIFAR-10 dataset, whereas the the original SqueezeNet was optimized for ImageNet-1k - the primary differences being input size and classes : 32.32.3 for CIFAR with 10 classes and 224.224.3 for ImageNet with 1000 classes. 
+*The **squeezenet_architecture.ipynb** notebook is going to likely remain the same unless I fine tune some of the parameters or rearrange the layers (chiefly, where I downsample with max pooling). The actual SqueezeNet architecture is different than what I will refer to as 'Squeeze Net' so I encourage you to read the paper (cited below) and visit the [Deepscale/SqueezeNet github page](https://github.com/deepscale/squeezenet). Most of the modifications I made were to better suit the CIFAR-10 dataset, whereas the the original SqueezeNet was optimized for ImageNet-1k - the primary differences being input size and classes : 32.32.3 for CIFAR with 10 classes and 224.224.3 for ImageNet with 1000 classes. *
 
 ## The CIFAR-10 Data
 
