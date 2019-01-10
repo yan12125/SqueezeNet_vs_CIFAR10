@@ -20,6 +20,7 @@ discussion about the accuracy-plateau, etc.
 This is a baseline data set of tiny 32 x 32 x 3 images with 10 classes. Because of its size, it was appropriate for my local machine. There are 50,000 training images and 10,000 training images.  
 
 ![alt text](https://github.com/zshancock/SqueezeNet_vs_CIFAR10/blob/master/graphics/cifar_visual.JPG)
+
 **25 Images from the CIFAR-10 dataset (notice: this only shows 9 of the 10 classes - no 'bird' shown).**
 
 ## The Model
