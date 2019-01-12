@@ -1,19 +1,10 @@
-# SqueezeNet vs. CIFAR10 (in progress)
+# SqueezeNet vs. CIFAR10
 ## Zac Hancock (zshancock@gmail.com)
 
-### Updates
-This project is in progress
-Training was committed but the model is already different - I intend to train the model overnight with roughly 250 epochs to encourage
-discussion about the accuracy-plateau, etc. 
 
-**To Do List ~ ETA within a week**
-- [X] Open repo, add notebooks, start README.md
-- [X] Add visualize_cifar.ipynb notebook
-- [ ] Upload updated deploy_squeezenet.ipynb notebook (~250 epochs?)
-- [ ] complete README.md with new discussion and graphics
+## Introduction
 
-
-*The **squeezenet_architecture.ipynb** notebook is going to likely remain the same unless I fine tune some of the parameters or rearrange the layers (chiefly, where I downsample with max pooling). The actual SqueezeNet architecture is different than what I will refer to as 'Squeeze Net' so I encourage you to read the paper (cited below) and visit the [Deepscale/SqueezeNet github page](https://github.com/deepscale/squeezenet). Most of the modifications I made were to better suit the CIFAR-10 dataset, whereas the the original SqueezeNet was optimized for ImageNet-1k - the primary differences being input size and classes : 32.32.3 for CIFAR with 10 classes and 224.224.3 for ImageNet with 1000 classes.*
+SqueezeNet is focused on size and performance over outright accuracy, however, it still achieved AlexNet-level accuracy in the paper by Iandola in 2016. The actual SqueezeNet architecture is different than what I will refer to as 'Squeeze Net' so I encourage you to read the paper (cited below) and visit the [Deepscale/SqueezeNet github page](https://github.com/deepscale/squeezenet). My model did not reach [AlexNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)-level accuracy (89%) but did reach approximately 80% with only 122k parameters. Additionally, my model is much smaller than even that referenced in the SqueezeNet paper. 
 
 ## The CIFAR-10 Data
 
@@ -88,10 +79,14 @@ def SqueezeNet(input_shape = (32,32,3), classes = 10):
 
 ## Results
 
-The first training of this architecture after 10 epochs resulted in near 50% training accuracy, without overfitting. This led the analyst to possibly retrain with as many as 250 epochs because the plateau of accuracy could be higher (it continued to increase all of 10 epochs). A later commit may include new weights for more epochs and training, but admittedly this will require cloud computing because my local machine will probably struggle. 
+The first training of this architecture after 10 epochs resulted in near 50% training accuracy, without overfitting. However, better accuracy could be achieved once increased to 250 epochs. Admittedly, it does look like some overfitting was beginning to occur, as the training accuracy and loss begins to get stronger than the testing metrics. The model was impressively lightweight and worked on a very average machine, even at 250 epochs. I might come back to try to construct the entire SqueezeNet as documented (more fire modules, bypass, etc).  
 
 ![alt text](https://github.com/zshancock/SqueezeNet_vs_CIFAR10/blob/master/graphics/accuracy_and_loss.JPG)
-**Results of the CNN versus the CIFAR-10**
+**Results of the model versus the CIFAR-10 on only 10 epochs**
+
+![alt text](https://github.com/zshancock/SqueezeNet_vs_CIFAR10/blob/master/graphics/250_epochs_acc_and_loss.JPG)
+**Results of the model versus the CIFAR-10 on only 250 epochs**
+
 
 ## Citations
 
@@ -113,3 +108,11 @@ Title = Learning Multiple Layers of Features from Tiny Images
 Year = 2009
 ```
 
+AlexNet paper -
+[ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
+
+```
+Author = Alex Krizhevsky, Ilya Sutskever, Geoffrey Hinton
+Title = ImageNet Classification with Deep Convolutional Neural Networks
+Year = 2012
+```
