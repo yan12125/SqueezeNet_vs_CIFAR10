@@ -4,7 +4,7 @@
 
 ## Introduction
 
-SqueezeNet is focused on size and performance over outright accuracy, however, it still achieved AlexNet-level accuracy in the paper by Iandola in 2016. The actual SqueezeNet architecture is different than what I will refer to as 'Squeeze Net' so I encourage you to read the paper (cited below) and visit the [Deepscale/SqueezeNet github page](https://github.com/deepscale/squeezenet). My model did not reach [AlexNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)-level accuracy (89%) but did reach approximately 80% with only 122k parameters. Additionally, my model is much smaller than even that referenced in the SqueezeNet paper. 
+SqueezeNet is focused on size and performance over outright accuracy, however, it still achieved AlexNet-level accuracy in the paper by Iandola in 2016. The actual SqueezeNet architecture is different than what I will refer to as 'Squeeze Net' so I encourage you to read the paper (cited below) and visit the [Deepscale/SqueezeNet github page](https://github.com/deepscale/squeezenet). My model did not reach [AlexNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)-level accuracy (89%) but did reach approximately 80% with only 122k parameters (AlexNet is ~ 60million, VGG is 130million+). Additionally, my model is much smaller than even that referenced in the SqueezeNet paper. 
 
 ## The CIFAR-10 Data
 
