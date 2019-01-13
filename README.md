@@ -85,7 +85,7 @@ The first training of this architecture after 10 epochs resulted in near 50% tra
 **Results of the model versus the CIFAR-10 on only 10 epochs**
 
 ![alt text](https://github.com/zshancock/SqueezeNet_vs_CIFAR10/blob/master/graphics/250_epochs_acc_and_loss.JPG)
-**Results of the model versus the CIFAR-10 on only 250 epochs**
+**Results of the model versus the CIFAR-10 on 250 epochs**
 
 
 ## Citations
